@@ -67,7 +67,9 @@
 
 	**This is the optional line that can be copied/pasted and can be used to change the bond series if you aren't calculating series EE bonds.**
 
-	You might also notice that lines 26-8 are commented out, but they will allow you to change the 'Value as of' field. *Note that you can only go as far as 4 months into the future (ie. it's 01/2016, so up to 05/2016) with treasury direct's calculator, or any date in the past. The explanation to this is that interest rates after '95 for series EE bonds are based on a weird calculation that's based on the economy at a specific time.*
+	You might also notice that lines 26-8 are commented out, but they will allow you to change the 'Value as of' field.
+
+	*Note that you can only go as far as 4 months into the future (ie. it's 01/2016, so up to 05/2016) with treasury direct's calculator, or set this field to any date in the past. The explanation to this is that interest rates after '95 for series EE bonds are based on a weird calculation that's based on the economy at a specific time.*
 
 8. To run this script once the heavy lifting has been done simply `cd` into the pyform directory and run the command
 
