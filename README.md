@@ -49,7 +49,7 @@
 	* *!INTERESTCOLUMN -* The interest rate a bond grows at determined by treasury direct's bond calculator after the above information is entered into it. Will be updated into the database automatically via pyform.py
 	* *!CURRENTVALUECOLUMN -* The total value of the bond as of the 'Value as of' date, also updated automatically in the database via pyform.py
 	* *!INTERESTAMOUNTCOLUMN -* The amount of money that has been made solely in interest collected, automatically updated in the PostGres DB/table via pyform.py
-	* *!FINALMATURITYCOLUMN -* The month and year that the bond will reach its final maturity, automatically updated via pyform.py
+	* *!FINALMATURITYCOLUMN -* The month and year that the bond will reach its final maturity, automatically updated into the database via pyform.py
 
 5. You must manually insert information into the `__TABLEWITHBONDINFO__` table via the command
 
