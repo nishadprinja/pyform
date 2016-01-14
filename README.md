@@ -43,9 +43,9 @@
 	`CREATE TABLE __TABLEWITHBONDINFO__ (id SERIAL PRIMARY KEY, !SERIALNUMBERS VARCHAR(13), !ISSUEDATES VARCHAR(7), !ACTUALDATE DATE, !INTERESTCOLUMN VARCHAR(5), !CURRENTVALUECOLUMN VARCHAR(8), !INTERESTAMOUNTCOLUMN VARCHAR(8), !FINALMATURITYCOLUMN VARCHAR(7));`
 	
 	These are the column names you will have to replace in the query and match in the pyform.py code. This lets us provide info to the webform from our DB and lets us update our tables with information calculated from treasury direct
-	* *!SERIALNUMBERS - inserted by user* The serial number of each bond will be stored in this column and will have to be manually inserted into this table
-	* *!ISSUEDATES - inserted by user* The issue date of each bond will be stored in this column and will have to be manually inserted into this table
-	* *!ACTUALDATE *optional* - The actual date of issue, also a good way to organize the data if things are mistakenly inserted out of order (making the id column unreliable to sort by), but also requires manual insertion into this table
+	* *!SERIALNUMBERS - [inserted by user]* The serial number of each bond will be stored in this column and will have to be manually inserted into this table
+	* *!ISSUEDATES - [inserted by user]* The issue date of each bond will be stored in this column and will have to be manually inserted into this table
+	* *!ACTUALDATE [optional (but recommended), inserted by user]* - The actual date of issue, also a good way to organize the data if things are mistakenly inserted out of order (making the id column unreliable to sort by), but also requires manual insertion into this table
 	* *!INTERESTCOLUMN -* The interest rate a bond grows at determined by treasury direct's bond calculator after the above information is entered into it. Will be updated into the database automatically via pyform.py
 	* *!CURRENTVALUECOLUMN -* The total value of the bond as of the 'Value as of' date, also updated automatically in the database via pyform.py
 	* *!INTERESTAMOUNTCOLUMN -* The amount of money that has been made solely in interest collected, automatically updated in the PostGres DB/table via pyform.py
